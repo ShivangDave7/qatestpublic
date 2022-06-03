@@ -1,0 +1,8 @@
+
+ @font-face { font-style : bold; src: url("assets/fonts/signikabold700.ttf"); font-family : "Signika"; font-weight : 700;  }
+ @font-face { font-style : normal; src: url("assets/fonts/signikaregular400.ttf"); font-family : "Signika"; font-weight : 400;  }
+ @font-face { font-style : normal; src: url("assets/fonts/madaregular400.ttf"); font-family : "Mada"; font-weight : 400;  }
+ @font-face { font-style : bold; src: url("assets/fonts/robotorobotoromanbold700.ttf"); font-family : "Roboto"; font-weight : 700;  }
+ @font-face { font-style : bold; src: url("assets/fonts/madabold700.ttf"); font-family : "Mada"; font-weight : 700;  }
+ @font-face { font-style : bold; src: url("assets/fonts/poppinsbold700.ttf"); font-family : "Poppins"; font-weight : 700;  }
+ @font-face { font-style : normal; src: url("assets/fonts/poppinsregular400.ttf"); font-family : "Poppins"; font-weight : 400;  }
