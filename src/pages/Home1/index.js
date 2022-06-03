@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 import { postLogin } from "service/api";
 import * as TestConst from "constants/TestConst";
 import { useNavigate } from "react-router-dom";
@@ -66,109 +68,97 @@ const Home1Page = () => {
           compRight={0}
           compType="Stack"
         >
-          <Column
-            className="absolute bg-gradient  inset-[0] items-start justify-start rounded-radius5 w-[100%]"
-            compId="143"
-            comWidth={1440}
-            comHeight={780}
-            compLeft={0}
-            compRight={0}
-            compType="Column"
+          <Tabs
+            selectedTabClassName="!text-indigo_A200 font-mada font-bold !opacity-100 relative before:absolute before:w-[4px] before:bottom-[-8px] before:border-indigo_A200 before:border-2 before:bg-indigo_A200 before:rounded-radius2 before:mx-[auto] before:inset-x-[0]"
+            selectedTabPanelClassName="mb-[61px] mr-[120px] lg:mb-[47px] lg:mr-[93px] xl:mb-[54px] xl:mr-[106px] 3xl:mb-[73px] 3xl:mr-[144px] tab-panel--selected"
+            className="absolute w-[100%]"
           >
             <Column
-              className="font-roboto w-[100%]"
-              compId="240"
+              className="absolute bg-gradient  inset-[0] items-start justify-start rounded-radius5 w-[100%]"
+              compId="143"
               comWidth={1440}
-              comHeight={80}
+              comHeight={780}
               compLeft={0}
               compRight={0}
               compType="Column"
             >
-              <header
-                className="w-[100%]"
-                compId="34"
+              <Column
+                className="font-roboto w-[100%]"
+                compId="240"
                 comWidth={1440}
                 comHeight={80}
                 compLeft={0}
                 compRight={0}
-                compType="Header"
+                compType="Column"
               >
-                <Column
-                  className="bg-white_A700 shadow-bs w-[100%]"
-                  compId="4"
+                <header
+                  className="w-[100%]"
+                  compId="34"
                   comWidth={1440}
                   comHeight={80}
                   compLeft={0}
                   compRight={0}
-                  compType="Column"
+                  compType="Header"
                 >
                   <Column
-                    className="bg-white_A700 w-[100%]"
-                    compId="3"
+                    className="bg-white_A700 shadow-bs w-[100%]"
+                    compId="4"
                     comWidth={1440}
                     comHeight={80}
                     compLeft={0}
                     compRight={0}
                     compType="Column"
                   >
-                    <Row
-                      className="bg-white_A700 items-center justify-end w-[100%]"
-                      compId="88"
+                    <Column
+                      className="bg-white_A700 w-[100%]"
+                      compId="3"
                       comWidth={1440}
                       comHeight={80}
                       compLeft={0}
                       compRight={0}
-                      compType="Row"
+                      compType="Column"
                     >
-                      <Image
-                        src={"images/img_logo.svg"}
-                        className="lg:h-[27px] xl:h-[31px] h-[33.93px] 2xl:h-[34px] 3xl:h-[41px] mb-[23.07px] 2xl:mb-[23px] mt-[23px] lg:my-[17px] xl:my-[20px] 3xl:my-[27px] object-contain w-[2%]"
-                        compId="I1:369;47:2346;3:25"
-                        comWidth={35.26}
-                        comHeight={33.93}
+                      <Row
+                        className="bg-white_A700 items-center justify-end w-[100%]"
+                        compId="88"
+                        comWidth={1440}
+                        comHeight={80}
                         compLeft={0}
                         compRight={0}
-                        compType="Image"
-                        alt="Logo"
-                      />
-                      <Text
-                        className="font-bold 3xl:ml-[10px] lg:ml-[6px] xl:ml-[7px] ml-[8.74px] 2xl:ml-[8px] lg:my-[24px] xl:my-[28px] my-[32px] 3xl:my-[38px] text-center lg:text-fs10 xl:text-fs12 text-fs14 3xl:text-fs16 text-gray_900 w-[8%]"
-                        compId="I1:369;47:2346;3:24"
-                        comWidth={116}
-                        comHeight={16}
-                        compLeft={8.74}
-                        compRight={0}
-                        compType="Text"
-                      >{`mangcoding Store`}</Text>
-                      <Column
-                        className="font-mada items-start lg:mb-[14px] xl:mb-[16px] mb-[18px] 3xl:mb-[21px] lg:ml-[210px] xl:ml-[241px] ml-[271px] 3xl:ml-[325px] lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] w-[23%]"
-                        compId="I1:369;101:729"
-                        comWidth={335}
-                        comHeight={32}
-                        compLeft={271}
-                        compRight={0}
-                        compType="Column"
+                        compType="Row"
                       >
-                        <Column
-                          className="w-[100%]"
-                          compId="242"
-                          comWidth={335}
-                          comHeight={20}
+                        <Image
+                          src={"images/img_logo.svg"}
+                          className="lg:h-[27px] xl:h-[31px] h-[33.93px] 2xl:h-[34px] 3xl:h-[41px] mb-[23.07px] 2xl:mb-[23px] mt-[23px] lg:my-[17px] xl:my-[20px] 3xl:my-[27px] object-contain w-[2%]"
+                          compId="I1:369;47:2346;3:25"
+                          comWidth={35.26}
+                          comHeight={33.93}
                           compLeft={0}
                           compRight={0}
-                          compType="Column"
+                          compType="Image"
+                          alt="Logo"
+                        />
+                        <Text
+                          className="font-bold 3xl:ml-[10px] lg:ml-[6px] xl:ml-[7px] ml-[8.74px] 2xl:ml-[8px] lg:my-[24px] xl:my-[28px] my-[32px] 3xl:my-[38px] text-center lg:text-fs10 xl:text-fs12 text-fs14 3xl:text-fs16 text-gray_900 w-[8%]"
+                          compId="I1:369;47:2346;3:24"
+                          comWidth={116}
+                          comHeight={16}
+                          compLeft={8.74}
+                          compRight={0}
+                          compType="Text"
+                        >{`mangcoding Store`}</Text>
+                        <TabList
+                          className="flex flex-row font-mada items-start justify-start lg:mb-[14px] xl:mb-[16px] mb-[18px] 3xl:mb-[21px] lg:ml-[210px] xl:ml-[241px] ml-[271px] 3xl:ml-[325px] lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] w-[23%]"
+                          compId="I1:369;101:729"
+                          comWidth={335}
+                          comHeight={32}
+                          compLeft={271}
+                          compRight={0}
+                          compType="Tab"
                         >
-                          <Row
-                            className="items-center justify-between w-[100%]"
-                            compId="I1:369;3:5"
-                            comWidth={335}
-                            comHeight={20}
-                            compLeft={0}
-                            compRight={0}
-                            compType="Row"
-                          >
+                          <Tab className="cursor-pointer hover:font-normal font-normal xl:mb-[10px] mb-[12px] 3xl:mb-[14px] lg:mb-[9px] not-italic opacity-100 lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_900 text-left w-[14%]">
                             <Text
-                              className="cursor-pointer hover:font-bold font-bold lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-indigo_A200 text-left w-[14%]"
+                              className=""
                               compId="I1:369;3:9"
                               comWidth={47}
                               comHeight={20}
@@ -176,443 +166,446 @@ const Home1Page = () => {
                               compRight={0}
                               compType="Text"
                             >{`Home`}</Text>
+                          </Tab>
+                          <Tab className="cursor-pointer hover:font-normal font-normal xl:mb-[10px] mb-[12px] 3xl:mb-[14px] lg:mb-[9px] lg:ml-[31px] xl:ml-[35px] ml-[40px] 3xl:ml-[48px] not-italic opacity-100 lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_900 text-left w-[12%]">
                             <Text
-                              className="cursor-pointer hover:font-bold font-normal not-italic lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_900 hover:text-indigo_A200 text-left w-[12%]"
+                              className=""
                               compId="I1:369;3:6"
                               comWidth={40}
                               comHeight={20}
-                              compLeft={0}
+                              compLeft={40}
                               compRight={0}
                               compType="Text"
                             >{`Shop`}</Text>
+                          </Tab>
+                          <Tab className="cursor-pointer hover:font-normal font-normal xl:mb-[10px] mb-[12px] 3xl:mb-[14px] lg:mb-[9px] lg:ml-[31px] xl:ml-[35px] ml-[40px] 3xl:ml-[48px] not-italic opacity-100 lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_900 text-left w-[21%]">
                             <Text
-                              className="cursor-pointer hover:font-bold font-normal not-italic lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_900 hover:text-indigo_A200 text-left w-[21%]"
+                              className=""
                               compId="I1:369;3:10"
                               comWidth={69}
                               comHeight={20}
-                              compLeft={0}
+                              compLeft={40}
                               compRight={0}
                               compType="Text"
                             >{`About Us`}</Text>
+                          </Tab>
+                          <Tab className="cursor-pointer hover:font-normal font-normal xl:mb-[10px] mb-[12px] 3xl:mb-[14px] lg:mb-[9px] lg:ml-[31px] xl:ml-[35px] ml-[40px] 3xl:ml-[48px] not-italic opacity-100 lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_900 text-left w-[18%]">
                             <Text
-                              className="cursor-pointer hover:font-bold font-normal not-italic lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_900 hover:text-indigo_A200 text-left w-[18%]"
+                              className=""
                               compId="I1:369;3:17"
                               comWidth={59}
                               comHeight={20}
-                              compLeft={0}
+                              compLeft={40}
                               compRight={0}
                               compType="Text"
                             >{`Contact`}</Text>
+                          </Tab>
+                        </TabList>
+                        <Row
+                          className="font-poppins items-start justify-center lg:ml-[31px] xl:ml-[35px] ml-[40px] 3xl:ml-[48px] xl:mr-[105px] mr-[119px] 3xl:mr-[142px] lg:mr-[92px] lg:my-[12px] xl:my-[14px] my-[16px] 3xl:my-[19px] w-[27%]"
+                          compId="237"
+                          comWidth={394}
+                          comHeight={48}
+                          compLeft={40}
+                          compRight={119}
+                          compType="Row"
+                        >
+                          <Stack
+                            className="lg:h-[21px] xl:h-[24px] h-[26px] 2xl:h-[27px] 3xl:h-[32px] lg:mb-[10px] xl:mb-[11px] mb-[13px] 3xl:mb-[15px] 3xl:mt-[10px] lg:mt-[7px] xl:mt-[8px] mt-[9px] w-[7%]"
+                            compId="172"
+                            comWidth={28}
+                            comHeight={26}
+                            compLeft={0}
+                            compRight={0}
+                            compType="Stack"
+                          >
+                            <Image
+                              src={"images/img_frame5.svg"}
+                              className="absolute bottom-[0] lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] left-[0] object-contain lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
+                              compId="I1:369;3:51"
+                              comWidth={24}
+                              comHeight={24}
+                              compLeft={0}
+                              compRight={0}
+                              compType="Image"
+                              alt="Frame5"
+                            />
+                            <div
+                              className="absolute bg-red_A100 lg:h-[13px] xl:h-[15px] h-[16px] 2xl:h-[17px] 3xl:h-[20px] right-[0] rounded-radius50 top-[4%] lg:w-[12px] xl:w-[14px] w-[16px] 3xl:w-[19px]"
+                              compId="I1:369;13:1422"
+                              comWidth={16}
+                              comHeight={16}
+                              compLeft={0}
+                              compRight={0}
+                              compType="View"
+                            ></div>
+                            <Text
+                              className="absolute font-normal not-italic right-[18%] xl:text-fs10 text-fs12 3xl:text-fs14 lg:text-fs9 text-left text-white_A700 top-[0] w-[25%]"
+                              compId="I1:369;13:1423"
+                              comWidth={7}
+                              comHeight={18}
+                              compLeft={0}
+                              compRight={5}
+                              compType="Text"
+                            >{`3`}</Text>
+                          </Stack>
+                          <Image
+                            src={"images/img_39.svg"}
+                            className="lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] lg:ml-[15px] xl:ml-[17px] ml-[20px] 3xl:ml-[24px] xl:my-[10px] my-[12px] 3xl:my-[14px] lg:my-[9px] object-contain lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
+                            compId="I1:369;171:3579"
+                            comWidth={24}
+                            comHeight={24}
+                            compLeft={20}
+                            compRight={0}
+                            compType="Image"
+                            alt="39"
+                          />
+                          <Image
+                            src={"images/img_frame5_1.svg"}
+                            className="lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] lg:ml-[18px] xl:ml-[21px] ml-[24px] 3xl:ml-[28px] xl:my-[10px] my-[12px] 3xl:my-[14px] lg:my-[9px] object-contain lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
+                            compId="I1:369;12:1402"
+                            comWidth={24}
+                            comHeight={24}
+                            compLeft={24}
+                            compRight={0}
+                            compType="Image"
+                            alt="Frame5"
+                          />
+                          <Row
+                            className="bg-white_A700 border-bw15 border-gray_500 border-solid font-mada items-center justify-between lg:ml-[18px] xl:ml-[21px] ml-[24px] 3xl:ml-[28px] rounded-radius10 w-[63%]"
+                            compId="85"
+                            comWidth={250}
+                            comHeight={48}
+                            compLeft={24}
+                            compRight={0}
+                            compType="Row"
+                          >
+                            <Text
+                              className="font-normal lg:mb-[10px] xl:mb-[11px] mb-[13px] 3xl:mb-[15px] lg:ml-[12px] xl:ml-[14px] ml-[16px] 3xl:ml-[19px] xl:mt-[10px] mt-[12px] 3xl:mt-[14px] lg:mt-[9px] not-italic lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_300 text-left w-[21%]"
+                              compId="I1:369;121:1797"
+                              comWidth={52}
+                              comHeight={23}
+                              compLeft={16}
+                              compRight={0}
+                              compType="Text"
+                            >{`Search`}</Text>
+                            <Image
+                              src={"images/img_frame6.svg"}
+                              className="lg:h-[14px] xl:h-[17px] h-[18px] 2xl:h-[19px] 3xl:h-[22px] lg:mr-[12px] xl:mr-[14px] mr-[16px] 3xl:mr-[19px] lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] object-contain lg:w-[14px] xl:w-[16px] w-[18px] 3xl:w-[21px]"
+                              compId="I1:369;7:743"
+                              comWidth={18}
+                              comHeight={18}
+                              compLeft={0}
+                              compRight={16}
+                              compType="Image"
+                              alt="Frame6"
+                            />
                           </Row>
-                        </Column>
-                        <div
-                          className="bg-indigo_A200 h-[4px] 3xl:h-[5px] 2xl:h-[5px] lg:mt-[6px] xl:mt-[7px] mt-[8px] 3xl:mt-[9px] lg:mx-[17px] xl:mx-[20px] mx-[23px] 3xl:mx-[27px] rounded-radius50 xl:w-[3px] lg:w-[3px] w-[4px]"
-                          compId="I1:369;3:22"
-                          comWidth={4}
-                          comHeight={4}
-                          compLeft={23}
-                          compRight={23}
-                          compType="View"
-                        ></div>
-                      </Column>
-                      <Row
-                        className="font-poppins items-start justify-center lg:ml-[31px] xl:ml-[35px] ml-[40px] 3xl:ml-[48px] xl:mr-[105px] mr-[119px] 3xl:mr-[142px] lg:mr-[92px] lg:my-[12px] xl:my-[14px] my-[16px] 3xl:my-[19px] w-[27%]"
-                        compId="237"
-                        comWidth={394}
-                        comHeight={48}
-                        compLeft={40}
-                        compRight={119}
-                        compType="Row"
+                        </Row>
+                      </Row>
+                    </Column>
+                  </Column>
+                </header>
+              </Column>
+              <Column
+                className="font-poppins items-end lg:mt-[62px] xl:mt-[71px] mt-[80px] 3xl:mt-[96px] w-[100%]"
+                compId="241"
+                comWidth={1440}
+                comHeight={24}
+                compLeft={0}
+                compRight={0}
+                compType="Column"
+              >
+                <Text
+                  className="font-bold lg:mx-[505px] xl:mx-[578px] mx-[650px] 3xl:mx-[780px] lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-left text-white_A700 w-[5%]"
+                  compId="1:120"
+                  comWidth={79}
+                  comHeight={24}
+                  compLeft={650}
+                  compRight={650}
+                  compType="Text"
+                >{`More list`}</Text>
+              </Column>
+              <Text
+                className="font-bold font-mada lg:leading-lh58 xl:leading-lh66 2xl:leading-lh75 leading-lh7500 3xl:leading-lh90 lg:mt-[54px] xl:mt-[62px] mt-[70px] 3xl:mt-[84px] xl:mx-[106px] mx-[120px] 3xl:mx-[144px] lg:mx-[93px] lg:text-fs37 xl:text-fs42 text-fs48 3xl:text-fs57 text-left text-white_A700 w-[30%]"
+                compId="1:122"
+                comWidth={426}
+                comHeight={150}
+                compLeft={120}
+                compRight={120}
+                compType="Text"
+              >
+                <span className="text-white_A700">
+                  <>{`Get the Latest Dress`}</>
+                </span>
+                <span className="text-white_A700">
+                  <>{` `}</>
+                </span>
+                <span className="text-white_A700">
+                  <>{`Models`}</>
+                </span>
+                <span className="text-white_A700">
+                  <>{` `}</>
+                </span>
+                <span className="text-white_A700">
+                  <>{`From Us`}</>
+                </span>
+              </Text>
+              <Text
+                className="font-normal font-poppins lg:leading-lh23 xl:leading-lh26 2xl:leading-lh30 leading-lh3000 3xl:leading-lh36 lg:mt-[18px] xl:mt-[21px] mt-[24px] 3xl:mt-[28px] xl:mx-[106px] mx-[120px] 3xl:mx-[144px] lg:mx-[93px] not-italic lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_300 text-left w-[35%]"
+                compId="1:123"
+                comWidth={508}
+                comHeight={90}
+                compLeft={120}
+                compRight={120}
+                compType="Text"
+              >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.`}</Text>
+              <Button
+                className="common-pointer bg-white_A700 font-bold font-poppins lg:mb-[135px] xl:mb-[154px] mb-[174px] 3xl:mb-[208px] lg:mt-[31px] xl:mt-[35px] mt-[40px] 3xl:mt-[48px] xl:mx-[106px] mx-[120px] 3xl:mx-[144px] lg:mx-[93px] xl:py-[10px] py-[12.045px] 2xl:py-[12px] 3xl:py-[14px] lg:py-[9px] shadow-bs1 text-center lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-indigo_A100 w-[13%]"
+                compId="7"
+                comWidth={180}
+                comHeight={48}
+                compLeft={120}
+                compRight={120}
+                compType="Button"
+                onClick={handleNavigate1}
+              >{`Shop Now`}</Button>
+            </Column>
+            {[...Array(4)].map(() => {
+              return (
+                <TabPanel className="absolute w-[45%]">
+                  <Row
+                    className="absolute items-start justify-center w-[100%]"
+                    compId="133"
+                    comWidth={653}
+                    comHeight={559}
+                    compLeft={0}
+                    compRight={0}
+                    compType="Row"
+                  >
+                    <Column
+                      className="items-center justify-start lg:mt-[37px] xl:mt-[42px] mt-[48px] 3xl:mt-[57px] w-[26%]"
+                      compId="134"
+                      comWidth={173}
+                      comHeight={511}
+                      compLeft={0}
+                      compRight={0}
+                      compType="Column"
+                    >
+                      <Stack
+                        className="lg:h-[209px] xl:h-[239px] h-[268px] 2xl:h-[269px] 3xl:h-[322px] w-[100%]"
+                        compId="174"
+                        comWidth={173}
+                        comHeight={268}
+                        compLeft={0}
+                        compRight={0}
+                        compType="Stack"
+                      >
+                        <Image
+                          src={"images/img_unsplashg5rse8.png"}
+                          className="absolute lg:h-[209px] xl:h-[239px] h-[268px] 2xl:h-[269px] 3xl:h-[322px] inset-y-[0] left-[1%] object-contain right-[0] w-[99%]"
+                          compId="1:362"
+                          comWidth={172}
+                          comHeight={268}
+                          compLeft={1}
+                          compRight={0}
+                          compType="Image"
+                          alt="unsplashG5RSe8"
+                        />
+                        <Text
+                          className="absolute bg-gradient1  bottom-[0] font-bold lg:leading-lh18 xl:leading-lh21 2xl:leading-lh24 leading-lh2400 3xl:leading-lh28 lg:pb-[12px] xl:pb-[14px] pb-[16px] 3xl:pb-[19px] lg:pl-[12px] xl:pl-[14px] pl-[16px] 3xl:pl-[19px] xl:pt-[10px] pt-[12px] 3xl:pt-[14px] lg:pt-[9px] lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-left text-white_A700 w-[100%]"
+                          compId="22"
+                          comWidth={173}
+                          comHeight={52}
+                          compLeft={0}
+                          compRight={0}
+                          compType="Text"
+                        >{`Suit`}</Text>
+                      </Stack>
+                      <Stack
+                        className="lg:h-[171px] xl:h-[195px] h-[219px] 2xl:h-[220px] 3xl:h-[263px] lg:mt-[18px] xl:mt-[21px] mt-[24px] 3xl:mt-[28px] mx-[auto] w-[84%]"
+                        compId="176"
+                        comWidth={146}
+                        comHeight={219}
+                        compLeft={10}
+                        compRight={10}
+                        compType="Stack"
+                      >
+                        <Image
+                          src={"images/img_unsplashnpywfy.png"}
+                          className="absolute lg:h-[171px] xl:h-[195px] h-[219px] 2xl:h-[220px] 3xl:h-[263px] inset-[0] object-cover w-[100%]"
+                          compId="1:366"
+                          comWidth={146}
+                          comHeight={219}
+                          compLeft={0}
+                          compRight={0}
+                          compType="Image"
+                          alt="unsplashnpyWFY"
+                        />
+                        <Text
+                          className="absolute bg-gradient1  bottom-[0] font-bold lg:leading-lh18 xl:leading-lh21 2xl:leading-lh24 leading-lh2400 3xl:leading-lh28 xl:pb-[10px] pb-[12px] 3xl:pb-[14px] lg:pb-[9px] xl:pl-[10px] pl-[12px] 3xl:pl-[14px] lg:pl-[9px] lg:pt-[12px] xl:pt-[14px] pt-[16px] 3xl:pt-[19px] lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-left text-white_A700 w-[100%]"
+                          compId="23"
+                          comWidth={146}
+                          comHeight={52}
+                          compLeft={0}
+                          compRight={0}
+                          compType="Text"
+                        >{`Shirt`}</Text>
+                      </Stack>
+                    </Column>
+                    <Image
+                      src={"images/img_group1926.svg"}
+                      className="lg:h-[35px] xl:h-[40px] h-[44px] 2xl:h-[45px] 3xl:h-[53px] lg:mb-[294px] xl:mb-[337px] mb-[379px] 3xl:mb-[455px] lg:ml-[18px] xl:ml-[21px] ml-[24px] 3xl:ml-[28px] lg:mt-[105px] xl:mt-[120px] mt-[136px] 3xl:mt-[163px] object-contain w-[2%]"
+                      compId="1:335"
+                      comWidth={12}
+                      comHeight={44}
+                      compLeft={24}
+                      compRight={0}
+                      compType="Image"
+                      alt="Group1926"
+                    />
+                    <Stack
+                      className="lg:h-[406px] xl:h-[465px] h-[522px] 2xl:h-[523px] 3xl:h-[627px] lg:mb-[28px] xl:mb-[32px] mb-[37px] 3xl:mb-[44px] lg:ml-[34px] xl:ml-[39px] ml-[44px] 3xl:ml-[52px] w-[61%]"
+                      compId="178"
+                      comWidth={400}
+                      comHeight={522}
+                      compLeft={44}
+                      compRight={0}
+                      compType="Stack"
+                    >
+                      <Stack
+                        className="absolute lg:h-[406px] xl:h-[465px] h-[522px] 2xl:h-[523px] 3xl:h-[627px] inset-[0] w-[100%]"
+                        compId="180"
+                        comWidth={400}
+                        comHeight={522}
+                        compLeft={0}
+                        compRight={0}
+                        compType="Stack"
+                      >
+                        <Image
+                          src={"images/img_rectangle7.svg"}
+                          className="absolute lg:h-[406px] xl:h-[465px] h-[522px] 2xl:h-[523px] 3xl:h-[627px] inset-[0] object-cover w-[100%]"
+                          compId="1:341"
+                          comWidth={400}
+                          comHeight={522}
+                          compLeft={0}
+                          compRight={0}
+                          compType="Image"
+                          alt="Rectangle7"
+                        />
+                        <Image
+                          src={"images/img_unsplashirqmti.png"}
+                          className="absolute lg:h-[406px] xl:h-[465px] h-[522px] 2xl:h-[523px] 3xl:h-[627px] inset-[0] object-cover w-[100%]"
+                          compId="1:343"
+                          comWidth={400}
+                          comHeight={522}
+                          compLeft={0}
+                          compRight={0}
+                          compType="Image"
+                          alt="unsplashIrQmti"
+                        />
+                      </Stack>
+                      <Stack
+                        className="absolute bottom-[5%] lg:h-[63px] xl:h-[72px] h-[80px] 2xl:h-[81px] 3xl:h-[97px] inset-x-[0] mx-[auto] w-[79%]"
+                        compId="182"
+                        comWidth={314}
+                        comHeight={80}
+                        compLeft={0}
+                        compRight={0}
+                        compType="Stack"
                       >
                         <Stack
-                          className="lg:h-[21px] xl:h-[24px] h-[26px] 2xl:h-[27px] 3xl:h-[32px] lg:mb-[10px] xl:mb-[11px] mb-[13px] 3xl:mb-[15px] 3xl:mt-[10px] lg:mt-[7px] xl:mt-[8px] mt-[9px] w-[7%]"
-                          compId="172"
-                          comWidth={28}
-                          comHeight={26}
-                          compLeft={0}
+                          className="absolute lg:h-[63px] xl:h-[72px] h-[80px] 2xl:h-[81px] 3xl:h-[97px] inset-y-[0] left-[4%] right-[0] w-[96%]"
+                          compId="184"
+                          comWidth={302}
+                          comHeight={80}
+                          compLeft={12}
                           compRight={0}
                           compType="Stack"
                         >
+                          <Row
+                            className="absolute bg-black_900_7f inset-y-[0] items-center justify-between left-[0] right-[4%] rounded-radius5 shadow-bs2 w-[96%]"
+                            compId="89"
+                            comWidth={290}
+                            comHeight={80}
+                            compLeft={0}
+                            compRight={12}
+                            compType="Row"
+                          >
+                            <Image
+                              src={"images/img_unsplashirqmti_1.png"}
+                              className="lg:h-[63px] xl:h-[72px] h-[80px] 2xl:h-[81px] 3xl:h-[97px] object-contain lg:w-[62px] xl:w-[71px] w-[80px] 3xl:w-[96px]"
+                              compId="1:352"
+                              comWidth={80}
+                              comHeight={80}
+                              compLeft={0}
+                              compRight={0}
+                              compType="Image"
+                              alt="unsplashIrQmti"
+                            />
+                            <Image
+                              src={"images/img_unsplashgreebe.png"}
+                              className="lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] my-[10px] 3xl:my-[12px] lg:my-[7px] xl:my-[8px] object-contain lg:w-[46px] xl:w-[53px] w-[60px] 3xl:w-[72px]"
+                              compId="1:349"
+                              comWidth={60}
+                              comHeight={60}
+                              compLeft={0}
+                              compRight={0}
+                              compType="Image"
+                              alt="unsplashGREEBE"
+                            />
+                            <Image
+                              src={"images/img_unsplashgreebe_1.png"}
+                              className="lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] mr-[10px] 3xl:mr-[12px] lg:mr-[7px] xl:mr-[8px] my-[10px] 3xl:my-[12px] lg:my-[7px] xl:my-[8px] object-contain lg:w-[46px] xl:w-[53px] w-[60px] 3xl:w-[72px]"
+                              compId="1:351"
+                              comWidth={60}
+                              comHeight={60}
+                              compLeft={0}
+                              compRight={10}
+                              compType="Image"
+                              alt="unsplashGREEBE"
+                            />
+                          </Row>
                           <Image
-                            src={"images/img_frame5.svg"}
-                            className="absolute bottom-[0] lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] left-[0] object-contain lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
-                            compId="I1:369;3:51"
+                            src={"images/img_group1929.svg"}
+                            className="absolute lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] inset-y-[0] my-[auto] object-contain right-[0] lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
+                            compId="1:353"
                             comWidth={24}
                             comHeight={24}
                             compLeft={0}
                             compRight={0}
                             compType="Image"
-                            alt="Frame5"
+                            alt="Group1929"
                           />
-                          <div
-                            className="absolute bg-red_A100 lg:h-[13px] xl:h-[15px] h-[16px] 2xl:h-[17px] 3xl:h-[20px] right-[0] rounded-radius50 top-[4%] lg:w-[12px] xl:w-[14px] w-[16px] 3xl:w-[19px]"
-                            compId="I1:369;13:1422"
-                            comWidth={16}
-                            comHeight={16}
-                            compLeft={0}
-                            compRight={0}
-                            compType="View"
-                          ></div>
-                          <Text
-                            className="absolute font-normal not-italic right-[18%] xl:text-fs10 text-fs12 3xl:text-fs14 lg:text-fs9 text-left text-white_A700 top-[0] w-[25%]"
-                            compId="I1:369;13:1423"
-                            comWidth={7}
-                            comHeight={18}
-                            compLeft={0}
-                            compRight={5}
-                            compType="Text"
-                          >{`3`}</Text>
                         </Stack>
-                        <Image
-                          src={"images/img_39.svg"}
-                          className="lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] lg:ml-[15px] xl:ml-[17px] ml-[20px] 3xl:ml-[24px] xl:my-[10px] my-[12px] 3xl:my-[14px] lg:my-[9px] object-contain lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
-                          compId="I1:369;171:3579"
+                        <Stack
+                          className="absolute bg-indigo_A200 lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] inset-y-[0] left-[0] my-[auto] lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
+                          compId="21"
                           comWidth={24}
                           comHeight={24}
-                          compLeft={20}
+                          compLeft={0}
                           compRight={0}
-                          compType="Image"
-                          alt="39"
-                        />
-                        <Image
-                          src={"images/img_frame5_1.svg"}
-                          className="lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] lg:ml-[18px] xl:ml-[21px] ml-[24px] 3xl:ml-[28px] xl:my-[10px] my-[12px] 3xl:my-[14px] lg:my-[9px] object-contain lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
-                          compId="I1:369;12:1402"
-                          comWidth={24}
-                          comHeight={24}
-                          compLeft={24}
-                          compRight={0}
-                          compType="Image"
-                          alt="Frame5"
-                        />
-                        <Row
-                          className="bg-white_A700 border-bw15 border-gray_500 border-solid font-mada items-center justify-between lg:ml-[18px] xl:ml-[21px] ml-[24px] 3xl:ml-[28px] rounded-radius10 w-[63%]"
-                          compId="85"
-                          comWidth={250}
-                          comHeight={48}
-                          compLeft={24}
-                          compRight={0}
-                          compType="Row"
+                          compType="Stack"
                         >
-                          <Text
-                            className="font-normal lg:mb-[10px] xl:mb-[11px] mb-[13px] 3xl:mb-[15px] lg:ml-[12px] xl:ml-[14px] ml-[16px] 3xl:ml-[19px] xl:mt-[10px] mt-[12px] 3xl:mt-[14px] lg:mt-[9px] not-italic lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_300 text-left w-[21%]"
-                            compId="I1:369;121:1797"
-                            comWidth={52}
-                            comHeight={23}
-                            compLeft={16}
-                            compRight={0}
-                            compType="Text"
-                          >{`Search`}</Text>
                           <Image
-                            src={"images/img_frame6.svg"}
-                            className="lg:h-[14px] xl:h-[17px] h-[18px] 2xl:h-[19px] 3xl:h-[22px] lg:mr-[12px] xl:mr-[14px] mr-[16px] 3xl:mr-[19px] lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] object-contain lg:w-[14px] xl:w-[16px] w-[18px] 3xl:w-[21px]"
-                            compId="I1:369;7:743"
+                            src={"images/img_group1930.svg"}
+                            className="absolute lg:h-[14px] xl:h-[17px] h-[18px] 2xl:h-[19px] 3xl:h-[22px] inset-[0] justify-center m-[auto] object-contain lg:w-[14px] xl:w-[16px] w-[18px] 3xl:w-[21px]"
+                            compId="1:358"
                             comWidth={18}
                             comHeight={18}
-                            compLeft={0}
-                            compRight={16}
+                            compLeft={3}
+                            compRight={3}
                             compType="Image"
-                            alt="Frame6"
+                            alt="Group1930"
                           />
-                        </Row>
-                      </Row>
-                    </Row>
-                  </Column>
-                </Column>
-              </header>
-            </Column>
-            <Column
-              className="font-poppins items-end lg:mt-[62px] xl:mt-[71px] mt-[80px] 3xl:mt-[96px] w-[100%]"
-              compId="241"
-              comWidth={1440}
-              comHeight={24}
-              compLeft={0}
-              compRight={0}
-              compType="Column"
-            >
-              <Text
-                className="font-bold lg:mx-[505px] xl:mx-[578px] mx-[650px] 3xl:mx-[780px] lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-left text-white_A700 w-[5%]"
-                compId="1:120"
-                comWidth={79}
-                comHeight={24}
-                compLeft={650}
-                compRight={650}
-                compType="Text"
-              >{`More list`}</Text>
-            </Column>
-            <Text
-              className="font-bold font-mada lg:leading-lh58 xl:leading-lh66 2xl:leading-lh75 leading-lh7500 3xl:leading-lh90 lg:mt-[54px] xl:mt-[62px] mt-[70px] 3xl:mt-[84px] xl:mx-[106px] mx-[120px] 3xl:mx-[144px] lg:mx-[93px] lg:text-fs37 xl:text-fs42 text-fs48 3xl:text-fs57 text-left text-white_A700 w-[30%]"
-              compId="1:122"
-              comWidth={426}
-              comHeight={150}
-              compLeft={120}
-              compRight={120}
-              compType="Text"
-            >
-              <span className="text-white_A700">
-                <>{`Get the Latest Dress`}</>
-              </span>
-              <span className="text-white_A700">
-                <>{` `}</>
-              </span>
-              <span className="text-white_A700">
-                <>{`Models`}</>
-              </span>
-              <span className="text-white_A700">
-                <>{` `}</>
-              </span>
-              <span className="text-white_A700">
-                <>{`From Us`}</>
-              </span>
-            </Text>
-            <Text
-              className="font-normal font-poppins lg:leading-lh23 xl:leading-lh26 2xl:leading-lh30 leading-lh3000 3xl:leading-lh36 lg:mt-[18px] xl:mt-[21px] mt-[24px] 3xl:mt-[28px] xl:mx-[106px] mx-[120px] 3xl:mx-[144px] lg:mx-[93px] not-italic lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-gray_300 text-left w-[35%]"
-              compId="1:123"
-              comWidth={508}
-              comHeight={90}
-              compLeft={120}
-              compRight={120}
-              compType="Text"
-            >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.`}</Text>
-            <Button
-              className="common-pointer bg-white_A700 font-bold font-poppins lg:mb-[135px] xl:mb-[154px] mb-[174px] 3xl:mb-[208px] lg:mt-[31px] xl:mt-[35px] mt-[40px] 3xl:mt-[48px] xl:mx-[106px] mx-[120px] 3xl:mx-[144px] lg:mx-[93px] xl:py-[10px] py-[12.045px] 2xl:py-[12px] 3xl:py-[14px] lg:py-[9px] shadow-bs1 text-center lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-indigo_A100 w-[13%]"
-              compId="7"
-              comWidth={180}
-              comHeight={48}
-              compLeft={120}
-              compRight={120}
-              compType="Button"
-              onClick={handleNavigate1}
-            >{`Shop Now`}</Button>
-          </Column>
-          <Row
-            className="absolute bottom-[8%] items-start justify-center right-[8%] w-[45%]"
-            compId="133"
-            comWidth={653}
-            comHeight={559}
-            compLeft={0}
-            compRight={120}
-            compType="Row"
-          >
-            <Column
-              className="items-center justify-start lg:mt-[37px] xl:mt-[42px] mt-[48px] 3xl:mt-[57px] w-[26%]"
-              compId="134"
-              comWidth={173}
-              comHeight={511}
-              compLeft={0}
-              compRight={0}
-              compType="Column"
-            >
-              <Stack
-                className="lg:h-[209px] xl:h-[239px] h-[268px] 2xl:h-[269px] 3xl:h-[322px] w-[100%]"
-                compId="174"
-                comWidth={173}
-                comHeight={268}
-                compLeft={0}
-                compRight={0}
-                compType="Stack"
-              >
-                <Image
-                  src={"images/img_unsplashg5rse8.png"}
-                  className="absolute lg:h-[209px] xl:h-[239px] h-[268px] 2xl:h-[269px] 3xl:h-[322px] inset-y-[0] left-[1%] object-contain right-[0] w-[99%]"
-                  compId="1:362"
-                  comWidth={172}
-                  comHeight={268}
-                  compLeft={1}
-                  compRight={0}
-                  compType="Image"
-                  alt="unsplashG5RSe8"
-                />
-                <Text
-                  className="absolute bg-gradient1  bottom-[0] font-bold lg:leading-lh18 xl:leading-lh21 2xl:leading-lh24 leading-lh2400 3xl:leading-lh28 lg:pb-[12px] xl:pb-[14px] pb-[16px] 3xl:pb-[19px] lg:pl-[12px] xl:pl-[14px] pl-[16px] 3xl:pl-[19px] xl:pt-[10px] pt-[12px] 3xl:pt-[14px] lg:pt-[9px] lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-left text-white_A700 w-[100%]"
-                  compId="22"
-                  comWidth={173}
-                  comHeight={52}
-                  compLeft={0}
-                  compRight={0}
-                  compType="Text"
-                >{`Suit`}</Text>
-              </Stack>
-              <Stack
-                className="lg:h-[171px] xl:h-[195px] h-[219px] 2xl:h-[220px] 3xl:h-[263px] lg:mt-[18px] xl:mt-[21px] mt-[24px] 3xl:mt-[28px] mx-[auto] w-[84%]"
-                compId="176"
-                comWidth={146}
-                comHeight={219}
-                compLeft={10}
-                compRight={10}
-                compType="Stack"
-              >
-                <Image
-                  src={"images/img_unsplashnpywfy.png"}
-                  className="absolute lg:h-[171px] xl:h-[195px] h-[219px] 2xl:h-[220px] 3xl:h-[263px] inset-[0] object-cover w-[100%]"
-                  compId="1:366"
-                  comWidth={146}
-                  comHeight={219}
-                  compLeft={0}
-                  compRight={0}
-                  compType="Image"
-                  alt="unsplashnpyWFY"
-                />
-                <Text
-                  className="absolute bg-gradient1  bottom-[0] font-bold lg:leading-lh18 xl:leading-lh21 2xl:leading-lh24 leading-lh2400 3xl:leading-lh28 xl:pb-[10px] pb-[12px] 3xl:pb-[14px] lg:pb-[9px] xl:pl-[10px] pl-[12px] 3xl:pl-[14px] lg:pl-[9px] lg:pt-[12px] xl:pt-[14px] pt-[16px] 3xl:pt-[19px] lg:text-fs14 xl:text-fs16 text-fs18 3xl:text-fs21 text-left text-white_A700 w-[100%]"
-                  compId="23"
-                  comWidth={146}
-                  comHeight={52}
-                  compLeft={0}
-                  compRight={0}
-                  compType="Text"
-                >{`Shirt`}</Text>
-              </Stack>
-            </Column>
-            <Image
-              src={"images/img_group1926.svg"}
-              className="lg:h-[35px] xl:h-[40px] h-[44px] 2xl:h-[45px] 3xl:h-[53px] lg:mb-[294px] xl:mb-[337px] mb-[379px] 3xl:mb-[455px] lg:ml-[18px] xl:ml-[21px] ml-[24px] 3xl:ml-[28px] lg:mt-[105px] xl:mt-[120px] mt-[136px] 3xl:mt-[163px] object-contain w-[2%]"
-              compId="1:335"
-              comWidth={12}
-              comHeight={44}
-              compLeft={24}
-              compRight={0}
-              compType="Image"
-              alt="Group1926"
-            />
-            <Stack
-              className="lg:h-[406px] xl:h-[465px] h-[522px] 2xl:h-[523px] 3xl:h-[627px] lg:mb-[28px] xl:mb-[32px] mb-[37px] 3xl:mb-[44px] lg:ml-[34px] xl:ml-[39px] ml-[44px] 3xl:ml-[52px] w-[61%]"
-              compId="178"
-              comWidth={400}
-              comHeight={522}
-              compLeft={44}
-              compRight={0}
-              compType="Stack"
-            >
-              <Stack
-                className="absolute lg:h-[406px] xl:h-[465px] h-[522px] 2xl:h-[523px] 3xl:h-[627px] inset-[0] w-[100%]"
-                compId="180"
-                comWidth={400}
-                comHeight={522}
-                compLeft={0}
-                compRight={0}
-                compType="Stack"
-              >
-                <Image
-                  src={"images/img_rectangle7.svg"}
-                  className="absolute lg:h-[406px] xl:h-[465px] h-[522px] 2xl:h-[523px] 3xl:h-[627px] inset-[0] object-cover w-[100%]"
-                  compId="1:341"
-                  comWidth={400}
-                  comHeight={522}
-                  compLeft={0}
-                  compRight={0}
-                  compType="Image"
-                  alt="Rectangle7"
-                />
-                <Image
-                  src={"images/img_unsplashirqmti.png"}
-                  className="absolute lg:h-[406px] xl:h-[465px] h-[522px] 2xl:h-[523px] 3xl:h-[627px] inset-[0] object-cover w-[100%]"
-                  compId="1:343"
-                  comWidth={400}
-                  comHeight={522}
-                  compLeft={0}
-                  compRight={0}
-                  compType="Image"
-                  alt="unsplashIrQmti"
-                />
-              </Stack>
-              <Stack
-                className="absolute bottom-[5%] lg:h-[63px] xl:h-[72px] h-[80px] 2xl:h-[81px] 3xl:h-[97px] inset-x-[0] mx-[auto] w-[79%]"
-                compId="182"
-                comWidth={314}
-                comHeight={80}
-                compLeft={0}
-                compRight={0}
-                compType="Stack"
-              >
-                <Stack
-                  className="absolute lg:h-[63px] xl:h-[72px] h-[80px] 2xl:h-[81px] 3xl:h-[97px] inset-y-[0] left-[4%] right-[0] w-[96%]"
-                  compId="184"
-                  comWidth={302}
-                  comHeight={80}
-                  compLeft={12}
-                  compRight={0}
-                  compType="Stack"
-                >
-                  <Row
-                    className="absolute bg-black_900_7f inset-y-[0] items-center justify-between left-[0] right-[4%] rounded-radius5 shadow-bs2 w-[96%]"
-                    compId="89"
-                    comWidth={290}
-                    comHeight={80}
-                    compLeft={0}
-                    compRight={12}
-                    compType="Row"
-                  >
-                    <Image
-                      src={"images/img_unsplashirqmti_1.png"}
-                      className="lg:h-[63px] xl:h-[72px] h-[80px] 2xl:h-[81px] 3xl:h-[97px] object-contain lg:w-[62px] xl:w-[71px] w-[80px] 3xl:w-[96px]"
-                      compId="1:352"
-                      comWidth={80}
-                      comHeight={80}
-                      compLeft={0}
-                      compRight={0}
-                      compType="Image"
-                      alt="unsplashIrQmti"
-                    />
-                    <Image
-                      src={"images/img_unsplashgreebe.png"}
-                      className="lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] my-[10px] 3xl:my-[12px] lg:my-[7px] xl:my-[8px] object-contain lg:w-[46px] xl:w-[53px] w-[60px] 3xl:w-[72px]"
-                      compId="1:349"
-                      comWidth={60}
-                      comHeight={60}
-                      compLeft={0}
-                      compRight={0}
-                      compType="Image"
-                      alt="unsplashGREEBE"
-                    />
-                    <Image
-                      src={"images/img_unsplashgreebe_1.png"}
-                      className="lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] mr-[10px] 3xl:mr-[12px] lg:mr-[7px] xl:mr-[8px] my-[10px] 3xl:my-[12px] lg:my-[7px] xl:my-[8px] object-contain lg:w-[46px] xl:w-[53px] w-[60px] 3xl:w-[72px]"
-                      compId="1:351"
-                      comWidth={60}
-                      comHeight={60}
-                      compLeft={0}
-                      compRight={10}
-                      compType="Image"
-                      alt="unsplashGREEBE"
-                    />
+                        </Stack>
+                      </Stack>
+                    </Stack>
                   </Row>
-                  <Image
-                    src={"images/img_group1929.svg"}
-                    className="absolute lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] inset-y-[0] my-[auto] object-contain right-[0] lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
-                    compId="1:353"
-                    comWidth={24}
-                    comHeight={24}
-                    compLeft={0}
-                    compRight={0}
-                    compType="Image"
-                    alt="Group1929"
-                  />
-                </Stack>
-                <Stack
-                  className="absolute bg-indigo_A200 lg:h-[19px] xl:h-[22px] h-[24px] 2xl:h-[25px] 3xl:h-[29px] inset-y-[0] left-[0] my-[auto] lg:w-[18px] xl:w-[21px] w-[24px] 3xl:w-[28px]"
-                  compId="21"
-                  comWidth={24}
-                  comHeight={24}
-                  compLeft={0}
-                  compRight={0}
-                  compType="Stack"
-                >
-                  <Image
-                    src={"images/img_group1930.svg"}
-                    className="absolute lg:h-[14px] xl:h-[17px] h-[18px] 2xl:h-[19px] 3xl:h-[22px] inset-[0] justify-center m-[auto] object-contain lg:w-[14px] xl:w-[16px] w-[18px] 3xl:w-[21px]"
-                    compId="1:358"
-                    comWidth={18}
-                    comHeight={18}
-                    compLeft={3}
-                    compRight={3}
-                    compType="Image"
-                    alt="Group1930"
-                  />
-                </Stack>
-              </Stack>
-            </Stack>
-          </Row>
+                </TabPanel>
+              );
+            })}
+          </Tabs>
         </Stack>
         <Stack
           className="h-[100px] 2xl:h-[101px] 3xl:h-[121px] lg:h-[78px] xl:h-[89px] w-[100%]"

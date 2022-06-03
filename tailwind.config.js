@@ -38,8 +38,8 @@ module.exports = {
       },
       fontFamily: {
         poppins: "Poppins",
-        roboto: "Roboto",
         mada: "Mada",
+        roboto: "Roboto",
         signika: "Signika",
       },
       backgroundImage: {
